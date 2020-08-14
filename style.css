@@ -1,0 +1,79 @@
+body { 
+    margin:0; 
+    padding:0; 
+    font-family: hypatia-sans-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#map { 
+    position:absolute; 
+    top:0; 
+    bottom:0; 
+    width:100%; }
+
+#info {
+
+    display: block;
+    position: relative;
+    margin: 0px auto;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px, 3px, 0, 0;
+    font-size: 18px;
+    text-align: center;
+    /*color: #E64C36;*/
+    background: #fff;
+    }
+
+.geocoder {
+    position:absolute;
+    z-index:1;
+    width:50%;
+    left:82%;
+    /*margin-left:-25%;*/
+    top:0%;
+    }
+
+#pics {
+    display: block;
+    position: relative;
+    top: 5%;
+    margin: 0px auto;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: #222;
+    background: #fff;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+.button {
+    position: relative;
+    margin: 0,auto;
+    z-index: 2;
+}
+
+#clear{
+    position: absolute;
+    margin-top: 7px;
+    left: 25%;
+    z-index: 3;
+    background-color: #838383;
+   /*border-color: #F78C7D;*/
+   border:none;
+   border-radius: 16px;
+  color: white;
+  padding: 2px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 900;
+}
+
