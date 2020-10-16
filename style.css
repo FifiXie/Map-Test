@@ -6,6 +6,10 @@ body {
     font-style: normal;
 }
 
+/*.parent{
+    width: 100%;
+}*/
+
 #map { 
     position:absolute; 
     top:0; 
@@ -20,7 +24,7 @@ body {
     width: 50%;
     padding: 10px;
     border: none;
-    border-radius: 3px, 3px, 0, 0;
+/*    border-radius: 3px, 3px, 0, 0;*/
     font-size: 18px;
     text-align: center;
     /*color: #E64C36;*/
@@ -28,10 +32,11 @@ body {
     }
 
 .geocoder {
+    margin-right: 1%;
     position:absolute;
     z-index:1;
-    width:50%;
-    left:82%;
+/*    width:10%;*/
+
     /*margin-left:-25%;*/
     top:0%;
     }
@@ -39,7 +44,7 @@ body {
 #pics {
     display: block;
     position: relative;
-    top: 5%;
+/*    top: -3%;*/
     margin: 0px auto;
     width: 50%;
     padding: 10px;
@@ -63,11 +68,12 @@ body {
     position: absolute;
     margin-top: 7px;
     left: 25%;
+/*    width:2%;*/
     z-index: 3;
     background-color: #838383;
    /*border-color: #F78C7D;*/
    border:none;
-   border-radius: 16px;
+   border-radius: 4px;
   color: white;
   padding: 2px 5px;
   text-align: center;

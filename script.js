@@ -391,7 +391,7 @@ map.on('click', function (e) {
         }).then((response) => response.json())
         .then(serializedResponse => {
 
-        	for (var i = 0 ; i < 36; i++) {
+        	for (var i = 0 ; i < 10; i++) {
         	var post = serializedResponse.result.webcams[i].image.current.preview;
         	//console.log('worked: ', post);
 
@@ -427,7 +427,7 @@ map.on('click', function (e) {
         	console.error('NO WE MESSED UP. ', e);
         })
 
-
+        // clearBox();
 
 });
 
