@@ -1,9 +1,10 @@
 body { 
     margin:0; 
     padding:0; 
-    font-family: hypatia-sans-pro, sans-serif;
-    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
     font-style: normal;
+    font-size: 16pt;
 }
 
 /*.parent{
@@ -22,10 +23,10 @@ body {
     position: relative;
     margin: 0px auto;
     width: 50%;
+    height: 10%;
     padding: 10px;
     border: none;
 /*    border-radius: 3px, 3px, 0, 0;*/
-    font-size: 18px;
     text-align: center;
     /*color: #E64C36;*/
     background: #fff;
@@ -49,8 +50,8 @@ body {
     width: 50%;
     padding: 10px;
     border: none;
-    border-radius: 5px;
-    font-size: 12px;
+    border-radius: 2px;
+/*    font-size: 12px;*/
     text-align: center;
     color: #222;
     background: #fff;

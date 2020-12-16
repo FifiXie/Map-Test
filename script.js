@@ -373,13 +373,15 @@ map.on('click', function (e) {
         //JSON.stringify(e.point) + '<br />' +
         // e.lngLat is the longitude, latitude geographical position of the event
         //JSON.stringify(e.lngLat);
+
+        clearBox();
         console.log(e.lngLat.lng);
         console.log(e.lngLat.lat);
 
         coordinatePair.lng = e.lngLat.lng
         coordinatePair.lat = e.lngLat.lat
 
-        endpointCord = 'https://webcamstravel.p.rapidapi.com/webcams/list/nearby='+ coordinatePair.lat +','+ coordinatePair.lng + ',20?lang=en&show=webcams%3Aimage%2Clocation'
+        endpointCord = 'https://webcamstravel.p.rapidapi.com/webcams/list/nearby='+ coordinatePair.lat +','+ coordinatePair.lng + ',5?lang=en&show=webcams%3Aimage%2Clocation'
 
         console.log('endpointCord', endpointCord)
 
@@ -420,11 +422,12 @@ map.on('click', function (e) {
 
         }
 
-        	document.getElementById('info').innerHTML = ('Total Live Landscape Webcams: ' + serializedResponse.result.total)
+        	document.getElementById('info').innerHTML = ('Total Live Landscape Webcams within 5km Radius: ' + serializedResponse.result.total)
         })
         .catch(e => {
 
         	console.error('NO WE MESSED UP. ', e);
+        	document.getElementById('info').innerHTML = ('Ummm.. Couldn&#39;t find any Live Webcams within 5km Radius')
         })
 
         // clearBox();
