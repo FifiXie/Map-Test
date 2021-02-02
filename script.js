@@ -427,7 +427,7 @@ map.on('click', function (e) {
         .catch(e => {
 
         	console.error('NO WE MESSED UP. ', e);
-        	document.getElementById('info').innerHTML = ('Ummm.. Couldn&#39;t find any Live Webcams within 5km Radius')
+        	document.getElementById('info').innerHTML = ('There are less than 10 Live Webcams within 5km Radius')
         })
 
         // clearBox();
